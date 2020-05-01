@@ -11,7 +11,7 @@ Finally, this tool accepts an error tolerance to consider total sums within a de
 
 
 INITIAL SETUP:
-* Step 1: Open the file mass_spec_analysis.R in Rstudio
+* Step 1: Open the file global.R in Rstudio
 * Step 2: Edit line 11 of the file, setwd('path/to/files') and change the filepath to the location of your file
 
 \* Make sure all files are in the same directory
