@@ -31,7 +31,7 @@ defaults <- read.table('defaults.csv',header=F, sep=',')
 
 inputfile <- defaults$V2[defaults$V1=='elementsfile']
 elementfile <- read.table(inputfile, header=T, sep=',')
-elementfile=elementfile[order(elementfile$MW, decreasing = T),]
+elementfile <- elementfile[order(elementfile$MW, decreasing = T),]
 
 ##########
 # Preprocessing
