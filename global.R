@@ -60,5 +60,5 @@ for(i in seq(m.max)){
   }
 }
 
-m.restrictions=paste(m.min, m.max, sep='')
+m.restrictions <- paste(m.min, m.max, sep='')
 

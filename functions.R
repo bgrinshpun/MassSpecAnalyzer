@@ -7,11 +7,11 @@ comboWrapper <- function(elem.subset, total.sum, tol, progress){
   
   allcombos <<- matrix(nrow=0,ncol = length(elem.subset$BaseElements),dimnames = list(NULL, elem.subset$BaseElements))
   curr.diff <- 0
-  n <- length(seq(total.sum-tol, total.sum+tol, by=1))
+  n <- 2*tol+1
   for(possiblesums in seq(total.sum-tol, total.sum+tol, by=1)){
     
     getElementCombinations(elem.subset, possiblesums, 1, c(), NULL, curr.diff)
-    progress$inc(1/n, detail = paste("Doing part", curr.diff+1, " of ", tol*2+1))
+    progress$inc(1/n, detail = paste("Doing part", curr.diff+1, " of ", n))
     curr.diff <- curr.diff+1
   }
   return(allcombos)
