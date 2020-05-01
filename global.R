@@ -10,8 +10,7 @@
 # Use the following command to run:
 # runApp('path/to/app')
 
-#setwd('path/to/app')  # set to location of input files
-setwd('~/Desktop/other/forwill/MassSpecAnalyzer')
+setwd('path/to/app')  # set to location of input files
 options(stringsAsFactors = F)
 source("functions.R")
 
